@@ -68,6 +68,7 @@ public class StorePojo {
     public void setZip(String zip) {
         this.zip = zip;
     }
+
     public Double getLat() {
         return lat;
     }

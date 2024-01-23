@@ -38,7 +38,7 @@ public class ProductSteps {
     }
 
     @Step("Getting the Product info with ProductId: {0}")
-    public HashMap<String, Object>  getProductInfoByProductId(int productId) {
+    public HashMap<String, Object> getProductInfoByProductId(int productId) {
         return SerenityRest.given().log().all()
                 .when()
                 .pathParam("productID", productId)
@@ -88,7 +88,7 @@ public class ProductSteps {
         return SerenityRest.given().log().all()
                 .pathParam("productID", productId)
                 .when()
-                .get( Path.PRODUCTS + EndPoints.GET_SINGLE_PRODUCT_BY_ID)
+                .get(Path.PRODUCTS + EndPoints.GET_SINGLE_PRODUCT_BY_ID)
                 .then();
     }
 }
